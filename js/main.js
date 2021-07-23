@@ -28,7 +28,7 @@
 
 var pariDispari = prompt("Scegli pari o dispari");
 
-var scegliNumero = parseInt(prompt("Scegli un numero da 1 a 5"));
+var numeroGiocatore = parseInt(prompt("Scegli un numero da 1 a 5"));
 
 var numeroRandom = (Math.floor(Math.random() * 5) + 1);
 
@@ -43,7 +43,7 @@ var generaSomma = somma();
 // Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
 function numero(){
    
-   var generaNumero = scegliNumero + numeroRandom;
+   var generaNumero = numeroGiocatore + numeroRandom;
    console.log(generaNumero);
    
    return generaNumero;
@@ -62,7 +62,7 @@ function somma(){
 
 }
 
-   if (generaNumero = pariDispari !== generaNumero){
+   if(numeroGiocatore == generaNumero){
 
       console.log("Il giocatore vince");
    } else{
